@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: cursive;
+    color: #3c6382;
+}
+
+.dark-node{
+    background: #3c6382;
+    color: white;
+}
+
+.toggle {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 10px);
+    margin: 0 auto;
+}
+
+.left {
+    margin: 11%;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.right {
+    margin: 11%;
+}
+
+.start-restart {
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+}
+
+.start {
+    width: 175px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3c6382;
+    cursor: pointer;
+    font-weight: 30px;
+    margin-top: 30px;
+    transition: 0.4s;
+}
+
+.start:hover {
+    color: white;
+    background-color: #3c6382;
+}
+
+.restart {
+    width: 175px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3c6382;
+    cursor: pointer;
+    font-weight: 30px;
+    margin-top: 30px;
+    transition: 0.4s;
+    margin-left: 20px;
+}
+
+.restart:hover {
+    color: white;
+    background-color: #3c6382;
+}
+
+.score{
+    height: 50px;
+}
+
+.game {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    font-size: 24px;
+}
+
+.header .player-X {
+    flex: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+
+.header .player-O {
+    flex: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    grid-gap: 0px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.board-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.board-tile:not(:nth-child(3n)) {
+    border-right: 3px solid #a4b0be;
+}
+
+.board-tile:not(:nth-last-child(-n + 3)) {
+    border-bottom: 3px solid #a4b0be;
+}
+
+.board-tile:hover {
+    background: #eee;
+}
