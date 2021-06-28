@@ -6,8 +6,9 @@
 
 body {
     /* font-family: cursive; */
+    font-family: 'Concert One', cursive;
     color: #3c6382;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .dark-node {

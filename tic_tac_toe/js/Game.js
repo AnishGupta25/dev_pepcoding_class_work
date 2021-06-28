@@ -34,7 +34,7 @@ class Game{
             [0,1,2],
             [3,4,5],
             [6,7,8],
-            [0.3,6],
+            [0,3,6],
             [1,4,7],
             [2,5,8],
             [0,4,8],
@@ -80,6 +80,15 @@ class GameView{
                 tile.classList.add("winner");
             }
         }
+        if(winner && game.turn == "X"){
+            window.alert("Player X wins");
+        }
+        else if(winner && game.turn == "O"){
+            window.alert("Player O wins");
+        }
+        // else{
+        //     window.alert("draw");
+        // }
     }
 
     updateTurn(game){
