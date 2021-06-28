@@ -181,7 +181,6 @@ browserOpenPromise
     });
   }
 
-
 function waitAndClick(selector) {
   return new Promise(function (scb, fcb) {
     let waitPromise = tab.waitForSelector(selector, { visible: true });
