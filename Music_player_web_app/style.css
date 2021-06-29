@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("https://images.pexels.com/photos/887349/pexels-photo-887349.jpeg?cs=srgb&dl=pexels-designecologist-887349.jpg&fm=jpg");
+    object-fit: contain;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    left: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.music-container {
+    background: #576574;
+    height: 370px;
+    width: 410px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.menu-container {
+    margin: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #657485;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    transform: rotate(90deg);
+    transition-duration: 0.5s;
+}
+
+.hidden:hover{
+    transform: rotate(0deg);
+}
+
+.menu{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #657485;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: antiquewhite;
+    border-radius: 0px 0px 15px 15px;
+    height: 50px;
+    width: 410px;
+}
+
+.paly-pause {
+    background: black;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 10%;
+    border-radius: 50%;
+}
+
+.paly-pause:hover {
+    background: red;
+    color: black;
+}
+
+.forward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forward i {
+    font-size: 24px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back i {
+    font-size: 24px;
+}
