@@ -6,8 +6,10 @@
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    background-image: url("https://images.pexels.com/photos/887349/pexels-photo-887349.jpeg?cs=srgb&dl=pexels-designecologist-887349.jpg&fm=jpg");
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg");
     object-fit: contain;
     height: 100vh;
     width: 100vw;
@@ -20,27 +22,32 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 150px;
-    left: 140px;
-    display: flex;
+    position: relative;
+    /* top: 150px; */
+    /* left: 565px; */
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
 }
 
 .music-container {
+    display: flex;
     background: #576574;
-    height: 370px;
-    width: 410px;
+    height: 350px;
+    width: 350px;
     border-radius: 15px 15px 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-container {
-    margin: 10px;
-    
+    /* margin: 10px; */
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: -webkit-fill-available;
+    padding: 10px;
 }
 
 .hidden {
@@ -56,11 +63,11 @@ body {
     transition-duration: 0.5s;
 }
 
-.hidden:hover{
+.hidden:hover {
     transform: rotate(0deg);
 }
 
-.menu{
+.menu {
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -71,6 +78,51 @@ body {
     border-radius: 50px;
 }
 
+.song-details {
+    height: 320px;
+    width: 270px;
+    background: #657485;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.song-name {
+    /* height: 4px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.artist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.song-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 145px;
+    width: 145px;
+    border-radius: 75px;
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 .options {
     display: flex;
     justify-content: space-evenly;
@@ -78,7 +130,7 @@ body {
     background: antiquewhite;
     border-radius: 0px 0px 15px 15px;
     height: 50px;
-    width: 410px;
+    width: 350px;
 }
 
 .paly-pause {
@@ -88,7 +140,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 10%;
+    width: 12%;
     border-radius: 50%;
 }
 
@@ -116,3 +168,43 @@ body {
 .back i {
     font-size: 24px;
 }
+
+.slider_container {
+    width: 60%;
+    height: 60px;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seek_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.seek_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider {
+    width: 60%;
+}
+/* https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg */
