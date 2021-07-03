@@ -272,6 +272,7 @@
 }
 
 .game-container {
+    font-family: 'Archivo Black', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,17 +290,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 300px;
     gap: 18px;
     border-radius: 10px;
     padding: 25px;
 }
 
 .game1 img {
-    height: 300px;
-    width: 300px;
+    height: 230px;
+    width: 250px;
     border-radius: 10px;
+    padding: 0px;
 }
 
 .game1 a {
@@ -320,16 +322,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 300px;
     gap: 18px;
     border-radius: 10px;
     padding: 25px;
 }
 
 .game2 img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
     padding: 0px;
 }
@@ -352,16 +354,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 300px;
     gap: 18px;
     border-radius: 10px;
     padding: 25px;
 }
 
 .game3 img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
     padding: 0px;
 }
@@ -384,17 +386,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 300px;
     gap: 18px;
     border-radius: 10px;
     padding: 25px;
 }
 
 .game4 img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
+    padding: 0px;
 }
 
 .game4 a {
@@ -408,10 +411,37 @@
     align-items: center;
     border: 2px solid black;
 }
+
 .game5 {
-    background: aqua;
-    height: 400px;
-    width: 400px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 370px;
+    width: 300px;
+    gap: 18px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.game5 img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.game5 a {
+    cursor: pointer;
+    width: 90px;
+    height: 25px;
+    background: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
 }
 
 .credits {
@@ -424,6 +454,7 @@
 }
 
 footer {
+    width: 99vw;
     color: black;
     background: #c8d6e5;
     padding-top: 15px;
