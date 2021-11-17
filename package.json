@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AnishGupta25/dev_pepcoding_class_work#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.6"
+    "cheerio": "^1.0.0-rc.6",
+    "firebase": "^8.9.1"
   }
 }
